@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.background-conteiner {
+	background-color: #EBECF0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.indent {
+	margin-left: 60px;
+	margin-right: 60px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header-conteiner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.controls {
+	display: flex;
+	background-color: #F5F6F8;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 15px 20px;
+	width: 100%;
+}
+
+.controls-item {
+	background-color: orange;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.controls::before {
+	content: '';
+	background-color: #ED6B5E;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.controls::after {
+	content: '';
+	background-color: #61C455;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0px 45px;
+	background-color: #fff;
+}
+
+.header-menu h2:nth-child(2) {
+	padding-left: 10px;
+	font-size: 26px;
+}
+
+.nav-menu {
+	display: flex;
+	margin: 0;
+	align-items: center;
+}
+
+.nav-menu li {
+	list-style: none;
+}
+
+.nav-menu_item {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 29px 25px;
+}
+
+.nav-menu_item:hover {
+	background-color: aliceblue;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.nav-menu_item-accentuated {
+	color: rgb(149 21 187);
+	background-color: #F8F5FE;
+	font-size: 20px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	height: 45px;
+	width: 159px;
+	border-radius: 7px;
+}
+
+.nav-menu_item-accentuated::before {
+	content: '';
+	background-color: #12B76B;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0 20px;
+}
+
+.nav-menu_item-accentuated:hover {
+	background-color: rgba(250, 14, 199, 0.473);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 18px 0;
+}
+
+.header-conteiner_aside {
+	display: flex;
+	width: 12%;
+	padding-left: 959px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon {
+	cursor: pointer;
+	height: 21px;
+	filter: invert(37%) sepia(2%) saturate(3425%) hue-rotate(182deg) brightness(107%) contrast(58%);
+}
+
+.header-conteiner_face {
+	background: url(/img/me.jpg);
+	background-size: 40px;
+	background-position-x: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
