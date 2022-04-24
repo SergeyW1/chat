@@ -14,14 +14,15 @@ a {
 }
 
 .indent {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 30px;
+	margin-right: 30px;
 	font-family: 'Roboto', sans-serif;
 }
 
 .header-conteiner {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .controls {
@@ -30,7 +31,6 @@ a {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	padding: 15px 20px;
-	width: 100%;
 }
 
 .controls-item {
@@ -63,14 +63,20 @@ a {
 .header-menu {
 	display: flex;
 	align-items: center;
-	width: 100%;
 	padding: 0px 45px;
 	background-color: #fff;
 }
 
 .header-menu h2:nth-child(2) {
 	padding-left: 10px;
-	font-size: 26px;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.header-menu_content {
+	width: 75%;
+	display: flex;
+	align-items: center;
 }
 
 .nav-menu {
@@ -84,7 +90,7 @@ a {
 }
 
 .nav-menu_item {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 600;
 	padding: 29px 25px;
 }
@@ -129,23 +135,27 @@ a {
 
 .header-conteiner_aside {
 	display: flex;
-	width: 12%;
-	padding-left: 959px;
-	justify-content: space-between;
+	width: 26%;
+	justify-content: flex-end;
 	align-items: center;
 }
 
-.icon {
+a {
 	cursor: pointer;
-	height: 21px;
+}
+
+.icon {
+	margin-right: 48px;
+	cursor: pointer;
+	height: 18px;
 	filter: invert(37%) sepia(2%) saturate(3425%) hue-rotate(182deg) brightness(107%) contrast(58%);
 }
 
 .header-conteiner_face {
 	background: url(/img/me.jpg);
-	background-size: 40px;
-	background-position-x: 5px;
-	height: 50px;
-	width: 50px;
+	background-size: 35px;
+	background-position-x: 7px;
+	height: 46px;
+	width: 45px;
 	border-radius: 50%;
 }
