@@ -7,6 +7,10 @@ a {
 	text-decoration: none;
 }
 
+object {
+	pointer-events: none;
+}
+
 .background-conteiner {
 	background-color: #EBECF0;
 	padding-top: 80px;
@@ -30,13 +34,13 @@ a {
 	background-color: #F5F6F8;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	padding: 15px 20px;
+	padding: 11px 17px;
 }
 
 .controls-item {
 	background-color: orange;
-	height: 15px;
-	width: 15px;
+	height: 12px;
+	width: 12px;
 	border-radius: 50%;
 	margin: 0 10px;
 	cursor: pointer;
@@ -45,8 +49,8 @@ a {
 .controls::before {
 	content: '';
 	background-color: #ED6B5E;
-	height: 15px;
-	width: 15px;
+	height: 12px;
+	width: 12px;
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -54,8 +58,8 @@ a {
 .controls::after {
 	content: '';
 	background-color: #61C455;
-	height: 15px;
-	width: 15px;
+	height: 12px;
+	width: 12px;
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -63,18 +67,18 @@ a {
 .header-menu {
 	display: flex;
 	align-items: center;
-	padding: 0px 45px;
+	padding: 0px 29px;
 	background-color: #fff;
 }
 
 .header-menu h2:nth-child(2) {
-	padding-left: 10px;
-	font-size: 22px;
+	padding-left: 7px;
+	font-size: 20px;
 	letter-spacing: 1px;
 }
 
 .header-menu_content {
-	width: 75%;
+	width: 85%;
 	display: flex;
 	align-items: center;
 }
@@ -82,6 +86,7 @@ a {
 .nav-menu {
 	display: flex;
 	margin: 0;
+	padding-left: 15px;
 	align-items: center;
 }
 
@@ -90,9 +95,9 @@ a {
 }
 
 .nav-menu_item {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 600;
-	padding: 29px 25px;
+	padding: 29px 15px;
 }
 
 .nav-menu_item:hover {
@@ -106,7 +111,7 @@ a {
 .nav-menu_item-accentuated {
 	color: rgb(149 21 187);
 	background-color: #F8F5FE;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
@@ -135,8 +140,8 @@ a {
 
 .header-conteiner_aside {
 	display: flex;
-	width: 26%;
-	justify-content: flex-end;
+	width: 15%;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -145,7 +150,6 @@ a {
 }
 
 .icon {
-	margin-right: 48px;
 	cursor: pointer;
 	height: 18px;
 	filter: invert(37%) sepia(2%) saturate(3425%) hue-rotate(182deg) brightness(107%) contrast(58%);
@@ -153,9 +157,29 @@ a {
 
 .header-conteiner_face {
 	background: url(/img/me.jpg);
-	background-size: 35px;
+	background-size: 31px;
 	background-position-x: 7px;
-	height: 46px;
-	width: 45px;
+	height: 42px;
+	width: 41px;
 	border-radius: 50%;
 }
+
+.main-conteiner {
+	display: flex;
+	background-color: #fff;
+	position: relative;
+}
+
+main::after {
+	content: '';
+	position: absolute;
+	border: 1px solid #aba9a940;
+	left: 0px;
+	right: 0;
+	top: 0;
+}
+
+.title {
+	padding: 30px 0 10px 25px;
+}
+
