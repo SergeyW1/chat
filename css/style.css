@@ -19,8 +19,7 @@ img {
 
 .background-conteiner {
 	background-color: #EBECF0;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding: 80px 100px;
 }
 
 .indent {
@@ -199,7 +198,7 @@ main::after {
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	width: 100%;
-	margin: 0 20px 50px;
+	margin: 0 20px 70px;
 	box-shadow: 0px 3px 3px #b3b3b3;
 }
 
@@ -269,7 +268,7 @@ main::after {
 .chat-selection_title-conteiner a {
 	border: 1px solid #aba9a963;
 	border-radius: 8px;
-	padding: 10px 7px;
+	padding: 10px 9px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -283,7 +282,7 @@ main::after {
 	background-color: rgba(134, 134, 134, 0.479);
 	;
 	border-radius: 8px;
-	padding: 10px 7px;
+	padding: 10px 9px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -546,7 +545,7 @@ main::after {
 
 .correspondence {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	width: 70%;
 }
 
@@ -556,7 +555,6 @@ main::after {
 	align-items: center;
 	padding-left: 23px;
 	height: 84px;
-	width: 100%;
 	border-bottom: 0.1px solid #aba9a940;
 }
 
@@ -702,4 +700,172 @@ main::after {
 	font-size: 11px;
 	color: #ffffffbd;
 	text-shadow: 1px 1px #d9d1d194;
+}
+
+.correspondence_conteiner {
+	display: flex;
+	flex-direction: column;
+	background-color: #FDFDFD;
+}
+
+
+.profile-sender {
+	position: relative;
+	display: flex;
+	padding: 10px 0px 10px 30px;
+	justify-content: flex-start;
+}
+
+.profile-sender_conteiner {
+	width: 100%;
+}
+
+.profile-sender_information {
+	display: flex;
+	flex-direction: column-reverse;
+	line-height: 30px;
+	padding-left: 10px;
+	width: 60%;
+}
+
+
+.profile-sender_information p {
+	margin: 0;
+	background-color: #F3F4F8;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	padding: 10px;
+	text-shadow: 1px 1px #b4b4b4c7;
+	font-size: 15px;
+	color: #000000b0;
+	line-height: 20px;
+}
+
+.profile-sender_conteiner h4 {
+	font-weight: 600;
+	font-size: 13px;
+	color: #000000db;
+	margin: 0;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.profile-sender .katherine-moss::after {
+	content: '';
+	position: absolute;
+	top: 38px;
+	left: 59px;
+	background-color: #10da17;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	border: 1px solid #fff;
+}
+
+.profile-sender .change-time {
+	float: right;
+	display: flex;
+	margin-right: 10px;
+	margin-top: 2px;
+	color: #aba8a8;
+	font-size: 11px;
+	text-shadow: 1px 1px #b5b1b14d;
+}
+
+.profile-sender_sending-file {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	background-color: #fff;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	padding: 10px;
+	text-shadow: 1px 1px #b5b1b14d;
+	border: 0.1px solid #aba9a940;
+}
+
+.profile-sender_sending-file .icon {
+	cursor: pointer;
+	height: 13px;
+	filter: invert(44%) sepia(29%) saturate(6369%) hue-rotate(236deg) brightness(87%) contrast(95%);
+}
+
+.profile-sender_sending-file a {
+	background-color: #F6EAFF;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.document-description {
+	display: flex;
+	flex-direction: column;
+	line-height: 15px;
+	padding-left: 10px;
+}
+
+.document-description h5 {
+	margin: 0;
+	text-shadow: 0px 0.5px #b4b4b4e0;
+	font-size: 13px;
+	color: #000000b0;
+}
+
+.document-description span {
+	font-size: 12px;
+	color: #aba8a8;
+	font-weight: 500;
+	text-shadow: 1px 1px #b5b1b14d;
+}
+
+.my-profile {
+	position: relative;
+	display: flex;
+	padding: 10px 30px 10px 0px;
+	justify-content: flex-end;
+}
+
+.my-profile_information {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 60%;
+}
+
+.my-profile_information p {
+	margin: 0;
+	background-color: #7F56D9;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	padding: 10px;
+	text-shadow: 1px 1px #b4b4b4c7;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffffcf;
+}
+
+.my-profile_conteiner {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.my-profile_conteiner h4 {
+	font-weight: 600;
+	font-size: 13px;
+	color: #000000db;
+	margin: 0;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.my-profile_conteiner .change-time {
+	float: right;
+	display: flex;
+	margin-right: 10px;
+	margin-top: 2px;
+	color: #aba8a8;
+	font-size: 11px;
+	text-shadow: 1px 1px #b5b1b14d;
 }
