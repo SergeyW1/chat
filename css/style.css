@@ -1019,6 +1019,10 @@ main::after {
 
 @media all and (max-width: 1180px) {
 
+.background-conteiner {
+	padding: 80px 0px;
+}
+
 	.title,
 	.chat-selection,
 	.aside-button,
@@ -1114,7 +1118,7 @@ main::after {
 	.burger-menu div:nth-child(4) {
 		position: absolute;
 		right: -14px;
-		top: 15px;
+		top: 26px;
 		color: #888D99;
 		width: 23px;
 		height: 0px;
@@ -1124,7 +1128,7 @@ main::after {
 	.burger-menu div:nth-child(5) {
 		position: absolute;
 		right: -11px;
-		top: 23px;
+		top: 34px;
 		color: #888D99;
 		width: 20px;
 		height: 0px;
@@ -1134,7 +1138,7 @@ main::after {
 	.burger-menu div:nth-child(6) {
 		position: absolute;
 		right: -14px;
-		top: 30.9px;
+    top: 41.9px;
 		color: #888D99;
 		width: 23px;
 		height: 0px;
@@ -1196,10 +1200,6 @@ main::after {
 	}
 }
 
-.background-conteiner {
-	padding: 80px 0px;
-}
-
 @media all and (max-width: 868px) {
 
 	.icon-smile,
@@ -1209,7 +1209,20 @@ main::after {
 	}
 
 	.indent {
-		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.burger-menu div:nth-child(4) {
+		top: 15px;
+	}
+
+	.burger-menu div:nth-child(5) {
+		top: 23px;
+	}
+
+	.burger-menu div:nth-child(6) {
+		top: 31px;
 	}
 
 	.box-send-message {
