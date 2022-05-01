@@ -1196,12 +1196,20 @@ main::after {
 	}
 }
 
+.background-conteiner {
+	padding: 80px 0px;
+}
+
 @media all and (max-width: 868px) {
 
 	.icon-smile,
 	.box-send-message_buttons .icon-call-menu,
 	.icon-send-button {
 		display: none;
+	}
+
+	.indent {
+		margin: 0;
 	}
 
 	.box-send-message {
