@@ -1030,6 +1030,11 @@ main::after {
 		margin: 3px 10px;
 	}
 
+	.correspondence_conteiner {
+		border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+	}
+
 	.correspondence_title .icon-call-menu {
     height: 18px;
     width: 18px;
