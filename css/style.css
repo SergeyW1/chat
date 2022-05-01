@@ -1030,22 +1030,23 @@ main::after {
 		margin: 3px 10px;
 	}
 
+
 	.correspondence_conteiner {
 		border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+		border-bottom-left-radius: 10px;
 	}
 
 	.correspondence_title .icon-call-menu {
-    height: 18px;
-    width: 18px;
-    -webkit-mask: url(/img/function-icon.svg) no-repeat;
-    -webkit-mask-size: 18px;
-    mask: url(/img/function-icon.svg) no-repeat;
-    mask-size: 17px;
-    background-color: #757575;
-    cursor: pointer;
+		height: 18px;
+		width: 18px;
+		-webkit-mask: url(/img/function-icon.svg) no-repeat;
+		-webkit-mask-size: 18px;
+		mask: url(/img/function-icon.svg) no-repeat;
+		mask-size: 17px;
+		background-color: #757575;
+		cursor: pointer;
 		margin-bottom: 22px;
-}
+	}
 
 	.icon-send-button_adaptation {
 		cursor: pointer;
@@ -1069,7 +1070,7 @@ main::after {
 	}
 
 	.header-profile {
-			width: 100%;
+		width: 100%;
 	}
 
 	.correspodence_active-dialog {
@@ -1078,7 +1079,7 @@ main::after {
 
 	.correspondence_title {
 		justify-content: space-between;
-    padding-right: 25px;
+		padding-right: 25px;
 	}
 
 
@@ -1113,7 +1114,7 @@ main::after {
 	.burger-menu div:nth-child(4) {
 		position: absolute;
 		right: -14px;
-		top: 29px;
+		top: 15px;
 		color: #888D99;
 		width: 23px;
 		height: 0px;
@@ -1123,7 +1124,7 @@ main::after {
 	.burger-menu div:nth-child(5) {
 		position: absolute;
 		right: -11px;
-		top: 35px;
+		top: 23px;
 		color: #888D99;
 		width: 20px;
 		height: 0px;
@@ -1133,7 +1134,7 @@ main::after {
 	.burger-menu div:nth-child(6) {
 		position: absolute;
 		right: -14px;
-		top: 40.9px;
+		top: 30.9px;
 		color: #888D99;
 		width: 23px;
 		height: 0px;
@@ -1205,6 +1206,32 @@ main::after {
 
 	.box-send-message {
 		padding: 10px 10px 30px 10px;
+	}
+
+	.checkbox-menu {
+		top: 12px;
+	}
+
+	.nav-menu_item {
+		font-size: 11px;
+		padding: 15px 3px;
+		letter-spacing: 0.5px;
+	}
+
+	.nav-menu_item-accentuated {
+		font-size: 11px;
+		padding: 10px 9px 10px 0px;
+	}
+
+	.nav-menu_item-accentuated:hover {
+		font-size: 11px;
+		padding: 10px 9px 10px 0px;
+	}
+
+	.nav-menu_item-accentuated::before {
+		height: 7px;
+		width: 7px;
+		margin: 0 9px;
 	}
 
 	.wrapper {
