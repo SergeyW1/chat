@@ -451,7 +451,7 @@ main::after {
 }
 
 .correspodence_active-dialog {
-	height: calc(190vh - 230px);
+	height: calc(100% - 137px);
 	overflow: auto;
 }
 
@@ -594,7 +594,8 @@ main::after {
 	display: flex;
 	flex-direction: column;
 	background-color: #FDFDFD;
-	border-bottom-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	height: 70em;
 }
 
 .profile-sender {
@@ -938,10 +939,6 @@ main::after {
 		width: 100%;
 	}
 
-	.correspodence_active-dialog {
-		height: calc(100vh - 230px);
-	}
-
 	.correspondence_title {
 		justify-content: space-between;
 		padding-right: 25px;
@@ -1069,6 +1066,10 @@ main::after {
 
 	.background-conteiner {
 		padding: 0px;
+	}
+
+	.correspodence_active-dialog {
+		height: calc(100% - 5em);
 	}
 
 	.indent {
