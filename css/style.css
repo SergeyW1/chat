@@ -451,7 +451,7 @@ main::after {
 }
 
 .correspodence_active-dialog {
-	height: calc(156vh - 230px);
+	height: calc(190vh - 230px);
 	overflow: auto;
 }
 
@@ -1065,6 +1065,10 @@ main::after {
 	.box-send-message_buttons .icon-call-menu,
 	.icon-send-button {
 		display: none;
+	}
+
+	.background-conteiner {
+		padding: 0px;
 	}
 
 	.indent {
