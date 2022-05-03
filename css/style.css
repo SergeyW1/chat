@@ -882,8 +882,9 @@ main::after {
 
 @media all and (max-width: 1180px) {
 
-	.background-conteiner {
-		padding: 80px 0px;
+
+	.correspodence_active-dialog {
+		height: calc(100vh - 360px);
 	}
 
 	.title,
@@ -1057,6 +1058,7 @@ main::after {
 	}
 }
 
+
 @media all and (max-width: 868px) {
 
 	.icon-smile,
@@ -1065,12 +1067,8 @@ main::after {
 		display: none;
 	}
 
-	.background-conteiner {
-		padding: 0px;
-	}
-
 	.correspodence_active-dialog {
-		height: calc(100% - 5em);
+		height: calc(100vh - 277px);
 	}
 
 	.indent {
