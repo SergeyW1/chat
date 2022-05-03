@@ -28,7 +28,6 @@ img {
 	background-color: #EBECF0;
 	margin-right: auto;
 	margin-left: auto;
-	height: 100%;
 }
 
 .indent {
@@ -219,7 +218,6 @@ main::after {
 	display: flex;
 	flex-wrap: wrap;
 	width: 30%;
-	height: 100%;
 }
 
 .chat-selection_title {
