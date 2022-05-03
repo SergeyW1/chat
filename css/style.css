@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #EBECF0;
 }
 
 ::-webkit-scrollbar {
@@ -25,12 +26,14 @@ img {
 
 .background-conteiner {
 	background-color: #EBECF0;
-	padding: 80px 100px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
 }
 
 .indent {
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 70px;
+	margin-right: 70px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -76,7 +79,6 @@ img {
 }
 
 .header-menu {
-	position: relative;
 	display: flex;
 	align-items: center;
 	padding: 0px 29px;
@@ -161,6 +163,7 @@ img {
 .icon {
 	cursor: pointer;
 	height: 21px;
+	width: 21px;
 	filter: invert(37%) sepia(2%) saturate(3425%) hue-rotate(182deg) brightness(107%) contrast(58%);
 }
 
@@ -192,8 +195,8 @@ main::after {
 }
 
 .title {
-	font-size: 28px;
-	padding: 30px 0 10px 25px;
+	font-size: 25px;
+	padding: 10px 0 0px 25px;
 }
 
 .main-conteiner_content {
@@ -202,7 +205,7 @@ main::after {
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	width: 100%;
-	margin: 0 20px 70px;
+	margin: 0 20px 30px;
 	box-shadow: 0px 3px 3px #b3b3b3;
 }
 
@@ -216,6 +219,7 @@ main::after {
 	display: flex;
 	flex-wrap: wrap;
 	width: 30%;
+	height: 100%;
 }
 
 .chat-selection_title {
@@ -229,10 +233,11 @@ main::after {
 
 .chat-selection_title-conteiner {
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .chat-selection-subtitle {
-	float: left;
 	align-items: center;
 	display: flex;
 	font-size: 18px;
@@ -269,11 +274,16 @@ main::after {
 	align-items: center;
 	margin-top: 20px;
 	margin-right: 25px;
-	float: right;
 }
 
 .chat-selection_title-conteiner a:hover {
 	background-color: rgba(134, 134, 134, 0.479);
+}
+
+.chat-selection_inner-right {
+	height: calc(100vh - 377px);
+	overflow: auto;
+	padding-right: 43px;
 }
 
 .chat-selection_talk {
@@ -335,11 +345,12 @@ main::after {
 
 .chat-selection_user-information {
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .user {
 	position: relative;
-	float: left;
 	display: flex;
 }
 
@@ -365,7 +376,6 @@ main::after {
 }
 
 .change-time {
-	float: right;
 	display: flex;
 	margin-right: 10px;
 	margin-top: 2px;
@@ -451,7 +461,7 @@ main::after {
 }
 
 .correspodence_active-dialog {
-	height: calc(100% - 137px);
+	height: calc(100vh - 475px);
 	overflow: auto;
 }
 
@@ -459,8 +469,8 @@ main::after {
 	position: relative;
 	display: flex;
 	align-items: center;
-	padding-left: 23px;
-	height: 84px;
+	padding: 5px 23px;
+	height: 70px;
 	border-bottom: 0.1px solid #aba9a940;
 }
 
@@ -550,6 +560,7 @@ main::after {
 	margin-right: 7px;
 	cursor: pointer;
 	height: 19px;
+	width: 19px;
 	filter: invert(45%) sepia(14%) saturate(1362%) hue-rotate(216deg) brightness(89%) contrast(85%);
 }
 
@@ -595,7 +606,7 @@ main::after {
 	flex-direction: column;
 	background-color: #FDFDFD;
 	border-bottom-right-radius: 10px;
-	height: 70em;
+	height: 100%;
 }
 
 .profile-sender {
@@ -607,6 +618,8 @@ main::after {
 
 .profile-sender_conteiner {
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .profile-sender_information {
@@ -638,23 +651,13 @@ main::after {
 	color: #000000db;
 	margin: 0;
 	letter-spacing: 1px;
-	float: left;
 }
 
-.profile-sender .katherine-moss::after {
-	content: '';
-	position: absolute;
-	top: 38px;
-	left: 59px;
-	background-color: #10da17;
-	border-radius: 50%;
-	height: 8px;
-	width: 8px;
-	border: 1px solid #fff;
+.katherine-moss {
+	position: relative;
 }
 
 .profile-sender .change-time {
-	float: right;
 	display: flex;
 	margin-right: 10px;
 	margin-top: 2px;
@@ -741,6 +744,8 @@ main::after {
 .my-profile_conteiner {
 	width: 100%;
 	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .my-profile_conteiner h4 {
@@ -749,11 +754,9 @@ main::after {
 	color: #000000db;
 	margin: 0;
 	letter-spacing: 1px;
-	float: left;
 }
 
 .my-profile_conteiner .change-time {
-	float: right;
 	display: flex;
 	margin-right: 10px;
 	margin-top: 2px;
@@ -881,9 +884,9 @@ main::after {
 
 @media all and (max-width: 1180px) {
 
-.background-conteiner {
-	padding: 80px 0px;
-}
+	.background-conteiner {
+		padding: 80px 0px;
+	}
 
 	.title,
 	.chat-selection,
@@ -995,7 +998,7 @@ main::after {
 	.burger-menu div:nth-child(6) {
 		position: absolute;
 		right: -14px;
-    top: 42px;
+		top: 42px;
 		color: #888D99;
 		width: 23px;
 		height: 0px;
@@ -1099,8 +1102,8 @@ main::after {
 
 	.box-send-message_buttons {
 		position: initial;
-    width: 45px;
-    margin-left: 5px;
+		width: 45px;
+		margin-left: 5px;
 	}
 
 	.checkbox-menu {
